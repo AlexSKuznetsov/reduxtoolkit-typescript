@@ -1,30 +1,30 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface State {
-  counter: number,
-  input: string
+  counter: number;
+  input: string;
 }
 
 const initialState: State = {
   counter: 0,
-  input: ""
-}
+  input: "",
+};
 
 export const newSlice = createSlice({
-  name: 'store',
+  name: "store",
   initialState,
   reducers: {
     increment: (state) => {
-      state.counter += 1
+      state.counter += 1;
     },
-     decrement: (state) => {
-      state.counter -= 1
+    decrement: (state) => {
+      state.counter -= 1;
     },
     update: (state, action: PayloadAction<string>) => {
-      state.input = action.payload
-    }
+      state.input = action.payload;
+    },
   },
-})
+});
 
-export const { increment, decrement, update } = newSlice.actions
-export default newSlice.reducer
+export const { increment, decrement, update } = newSlice.actions;
+export default newSlice.reducer;

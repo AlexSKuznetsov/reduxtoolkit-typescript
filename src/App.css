@@ -11,20 +11,6 @@
   margin-top: 50px;
 }
 
-.plus {
-  padding: 10px;
-  background-color: blue;
-  border: none;
-  color: white
-}
-
-.minus {
-  padding: 10px;
-  background-color: red;
-  border: none;
-  color: white;
-}
-
 .count {
   font-size: 20px;
   padding: 10px;
